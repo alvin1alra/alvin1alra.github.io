@@ -413,7 +413,28 @@ span {
     background-color: var(--second-bg-color);
 }
 
+/* Media query untuk tampilan mobile */
+@media (max-width: 767px) {
+    .about {
+        flex-direction: column;
+    }
 
+    .about-img {
+        order: 0;
+        width: 100%;
+        text-align: center; 
+    }
+
+    .about-img img {
+        height: 300px;
+        width: 300px;
+        margin-bottom: 10px; 
+    }
+
+    .about-content {
+        order: 1;
+    }
+}
 /* ======================================================================== */
 
 /* ======================== Responsive BreakPoints ======================== */
@@ -446,6 +467,18 @@ span {
         transform: translateX(0);
     }
 }
+/* Media query untuk tampilan mobile */
+@media (max-width: 767px) {
+    .portfolio-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-box {
+        margin-bottom: 20px; /* Berikan ruang antara setiap portofolio pada tampilan mobile */
+    }
+}
+
     </style>
 </head>
 
